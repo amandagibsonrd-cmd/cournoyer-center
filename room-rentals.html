@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Room Rentals | Cournoyer Center for Music Performance</title>
+  <meta name="description" content="Rent rehearsal space, a performance room, sound booth, and creative production space at Cournoyer Center for Music Performance in Houma, Louisiana." />
+
+  <meta property="og:title" content="Room Rentals | Cournoyer Center for Music Performance" />
+  <meta property="og:description" content="Rehearsal space, performance room, sound booth, backline equipment, and production services in Houma, Louisiana." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/room-rentals.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .small-text, .tag-list, .detail-list, .caption, .price, .fine-print {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--purple), var(--purple-dark));
+      color: var(--white);
+      text-align: center;
+      font-weight: 900;
+      font-size: 0.84rem;
+      letter-spacing: 0.04em;
+      padding: 9px 16px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-outline { border-color: rgba(75, 31, 120, 0.22); color: var(--purple-dark); background: transparent; }
+
+    .page-hero {
+      position: relative;
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.98) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.45) 100%),
+        url('room-rentals-hero.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 150px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 92px 22px 132px;
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .hero-image-card {
+      border-radius: 32px;
+      min-height: 330px;
+      background: linear-gradient(135deg, rgba(75,31,120,.25), rgba(199,201,209,.08)), url('room-rentals-band.jpg') center/cover no-repeat;
+      box-shadow: 0 24px 70px rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.16);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 { font-size: clamp(3rem, 6.2vw, 5.85rem); max-width: 940px; }
+    h2 { font-size: clamp(2.15rem, 4.1vw, 4.2rem); color: var(--purple-dark); }
+    h3 { font-size: clamp(1.32rem, 2vw, 2rem); color: var(--purple-dark); }
+
+    .page-hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.22rem);
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .rental-overview {
+      margin-top: -86px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .overview-panel,
+    .space-card,
+    .equipment-card,
+    .faq-card,
+    .cta-panel,
+    .gallery-panel,
+    .info-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .overview-panel,
+    .gallery-panel {
+      border-radius: 32px;
+      padding: 32px;
+    }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p {
+      font-size: 1.08rem;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .quick-grid,
+    .equipment-grid,
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .quick-card,
+    .equipment-card,
+    .faq-card,
+    .info-card {
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+    }
+
+    .quick-card {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+      border: 1px solid var(--line);
+    }
+
+    .label {
+      color: var(--purple-soft);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .quick-card p,
+    .space-card p,
+    .equipment-card p,
+    .faq-card p,
+    .info-card p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .spaces {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .space-stack {
+      display: grid;
+      gap: 26px;
+    }
+
+    .space-card {
+      border-radius: 34px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+    }
+
+    .space-card.reverse {
+      grid-template-columns: 1.05fr .95fr;
+    }
+
+    .space-image {
+      min-height: 420px;
+      background: linear-gradient(135deg, rgba(75,31,120,.35), rgba(199,201,209,.16)), var(--image) center/cover no-repeat;
+    }
+
+    .space-content {
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 22px;
+      font-size: 0.82rem;
+      font-weight: 900;
+      color: var(--purple-dark);
+    }
+
+    .tag-list span {
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .detail-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .detail-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .detail-list li::before {
+      content: '♪';
+      color: var(--purple-soft);
+      font-weight: 900;
+    }
+
+    .price-box {
+      margin-top: 26px;
+      padding: 18px;
+      border-radius: 22px;
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+    }
+
+    .price {
+      display: inline-flex;
+      margin: 0 8px 8px 0;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--purple-dark);
+      border: 1px solid var(--line);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .fine-print {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .equipment {
+      background: var(--white);
+    }
+
+    .equipment-card ul,
+    .faq-card ul {
+      margin: 16px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .policies {
+      background: var(--silver-light);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .tech-services {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(199, 201, 209, 0.28), transparent 30%),
+        linear-gradient(135deg, var(--purple-deep), var(--purple));
+      color: var(--white);
+    }
+
+    .tech-services h2,
+    .tech-services h3 { color: var(--white); }
+
+    .tech-services .section-intro p,
+    .tech-card p { color: rgba(255,255,255,.78); }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .tech-card {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius);
+      padding: 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .gallery {
+      background: var(--white);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      grid-template-rows: 230px 230px;
+      gap: 14px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      min-height: 180px;
+      background: linear-gradient(135deg, rgba(75,31,120,.34), rgba(199,201,209,.16)), var(--image) center/cover no-repeat;
+    }
+
+    .gallery-item.tall { grid-row: span 2; }
+
+    .caption {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      right: 18px;
+      background: rgba(22, 7, 37, 0.72);
+      color: var(--white);
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    .faq { background: var(--silver-light); }
+
+    .cta { background: var(--white); }
+
+    .cta-panel {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-radius: 36px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.72fr;
+      gap: 42px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -70px;
+      top: -70px;
+      border-radius: 50%;
+      background: rgba(199, 201, 209, 0.22);
+    }
+
+    .cta-panel h2 { color: var(--white); }
+
+    .cta-panel p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+    }
+
+    .contact-card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .contact-card p {
+      margin: 0 0 12px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .footer {
+      background: var(--purple-deep);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 42px 22px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer a {
+      display: block;
+      margin-top: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer a:hover { color: var(--white); }
+
+    .small-text {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.62);
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      nav { gap: 12px; font-size: 0.82rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .hero-inner,
+      .section-intro,
+      .space-card,
+      .space-card.reverse,
+      .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid,
+      .equipment-grid,
+      .faq-grid,
+      .tech-grid,
+      .info-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .gallery-item.tall { grid-row: auto; }
+      .gallery-item { min-height: 260px; }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 62px 18px 118px; }
+      .hero-image-card { min-height: 220px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .rental-overview { margin-top: -70px; }
+      .overview-panel, .gallery-panel, .cta-panel { padding: 24px; border-radius: 26px; }
+      .space-content { padding: 30px; }
+      .space-image { min-height: 260px; }
+      .hero-buttons, .cta-panel .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">Room rentals available for rehearsal space, sound booth use, recordings, and creative production.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="room-rentals.html">Room Rentals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Schedule a Tour</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Room rentals in Houma</div>
+          <h1>Rehearsal space, sound booth, and creative production rooms.</h1>
+          <p>At Cournoyer Center for Music Performance, we believe music is meant to be shared. Our performance room, rehearsal space, and sound booth are available for musicians, creators, students, and the local music community.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="contact.html">Ask About Availability</a>
+            <a class="btn btn-secondary" href="#spaces">View Rental Spaces</a>
+          </div>
+        </div>
+        <div class="hero-image-card" aria-label="Band performing in the Cournoyer Center performance space"></div>
+      </div>
+    </section>
+
+    <section class="rental-overview">
+      <div class="container">
+        <div class="overview-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Two rental spaces</div>
+              <h2>Performance space and sound booth options.</h2>
+            </div>
+            <p>The center includes a stage-style performance room for rehearsals, video shoots, small performances, and presentations, plus a compact sound booth suited for recording spoken word, vocals, or voice-over work.</p>
+          </div>
+
+          <div class="quick-grid">
+            <article class="quick-card">
+              <div class="label">Students</div>
+              <h3>Free practice access</h3>
+              <p>Students enrolled in private instruction may be able to use the spaces for free, based on availability and center policies.</p>
+            </article>
+
+            <article class="quick-card">
+              <div class="label">Bands and musicians</div>
+              <h3>Rehearse with backline</h3>
+              <p>The performance space includes access to a backline setup, making it easier for musicians to rehearse or prepare.</p>
+            </article>
+
+            <article class="quick-card">
+              <div class="label">Creators</div>
+              <h3>Record or livestream</h3>
+              <p>Additional tech services may be available for video shoots, livestreams, podcasts, and creative productions.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spaces" id="spaces">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Rental spaces</div>
+            <h2>Choose the space that fits your project.</h2>
+          </div>
+          <p>Use the performance space for rehearsals, band practice, video shoots, small presentations, and performances. Use the sound booth for recording spoken word, vocals, or voice-over style projects.</p>
+        </div>
+
+        <div class="space-stack">
+          <article class="space-card">
+            <div class="space-image" style="--image: url('melvin-parfait-performance-space.jpg');"></div>
+            <div class="space-content">
+              <div class="label">Performance room</div>
+              <h2>Melvin Parfait Memorial Performance Space</h2>
+              <p>This 365 sq. ft. performance space is designed for bands to rehearse their music and presentation. The 2-tier, 205 sq. ft. stage is also a strong option for video shoots, presentations, small performances, and creative projects.</p>
+              <div class="tag-list">
+                <span>365 sq. ft. room</span>
+                <span>205 sq. ft. stage</span>
+                <span>2-tier stage</span>
+                <span>Backline available</span>
+              </div>
+              <ul class="detail-list">
+                <li>Great for band rehearsals and stage practice</li>
+                <li>Useful for video shoots, livestreams, and presentations</li>
+                <li>Backline equipment available for rehearsal use</li>
+                <li>Room tech present for each reservation</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">$35/hr with backline</span>
+                <span class="price">2 hour minimum</span>
+                <span class="price">$25/hr without backline</span>
+                <p class="fine-print">Pricing can be confirmed when requesting availability.</p>
+              </div>
+              <div class="hero-buttons">
+                <a class="btn btn-purple" href="contact.html">Request This Space</a>
+                <a class="btn btn-outline" href="#equipment">View Equipment</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="space-card reverse">
+            <div class="space-content">
+              <div class="label">Sound booth</div>
+              <h2>Sound Booth</h2>
+              <p>The sound booth is suited for recording spoken word, simple voice-over work, vocals, or smaller audio projects. It is approximately 168 sq. ft. and can be a helpful space for clean, focused recording needs.</p>
+              <div class="tag-list">
+                <span>168 sq. ft.</span>
+                <span>Spoken word</span>
+                <span>Voice-over</span>
+                <span>Recording</span>
+              </div>
+              <ul class="detail-list">
+                <li>Good fit for spoken word and voice recording</li>
+                <li>Useful for simple audio and vocal projects</li>
+                <li>Professional videographer may be available by request</li>
+                <li>Contact the center for current pricing and availability</li>
+              </ul>
+              <div class="hero-buttons">
+                <a class="btn btn-purple" href="contact.html">Ask About the Booth</a>
+                <a class="btn btn-outline" href="tel:9857728066">Call or Text</a>
+              </div>
+            </div>
+            <div class="space-image" style="--image: url('sound-booth.jpg');"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-services">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow">Additional tech services</div>
+            <h2>Production support may be available.</h2>
+          </div>
+          <p>The center may be able to provide multi-camera crew and livestream tech support to give your presentation, performance, or event a polished look.</p>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card">
+            <div class="label" style="color: var(--silver-light);">Video</div>
+            <h3>Video shoot support</h3>
+            <p>Video production and performance recording may be available by request.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="label" style="color: var(--silver-light);">Livestream</div>
+            <h3>Livestream packages</h3>
+            <p>Livestream support may be available for presentations, performances, and special projects.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="label" style="color: var(--silver-light);">Podcast</div>
+            <h3>Podcast services</h3>
+            <p>Podcast and video shoot services may be provided by Daniel Babin and Jam Up Marketing, depending on availability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="equipment" id="equipment">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Backline equipment</div>
+            <h2>Available rehearsal equipment.</h2>
+          </div>
+          <p>The performance space includes a practical backline setup for bands and musicians. Equipment availability should be confirmed when reserving the room.</p>
+        </div>
+
+        <div class="equipment-grid">
+          <article class="equipment-card">
+            <div class="label">Drums</div>
+            <h3>Drum equipment</h3>
+            <ul>
+              <li>Pearl Export Series drum set: 12", 13", 16" toms, 22" bass drum, 6.5" x 14" snare</li>
+              <li>Zildjian ZBT crash cymbals: 14", 16", 18"</li>
+              <li>Zildjian Medium Ride: 20"</li>
+              <li>Zildjian New Beat Hi-Hats: 14"</li>
+              <li>L.P. Bongos with stand</li>
+              <li>Miscellaneous percussion instruments</li>
+            </ul>
+          </article>
+
+          <article class="equipment-card">
+            <div class="label">Guitar and bass</div>
+            <h3>Amps and keys</h3>
+            <ul>
+              <li>Boss Katana 50 MKII with footswitch: 2</li>
+              <li>Fender Rumble 50 bass amp</li>
+              <li>Yamaha P-45 digital piano</li>
+            </ul>
+          </article>
+
+          <article class="equipment-card">
+            <div class="label">P.A. and audio</div>
+            <h3>Sound equipment</h3>
+            <ul>
+              <li>Behringer Europower PMP500 10-channel mixer</li>
+              <li>Behringer Eurolive B2120 P.A. loudspeakers on stands: 2</li>
+              <li>Shure SM58 microphones: 4</li>
+              <li>Behringer Ultralinx ULM300M wireless microphone</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="policies">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Rental details</div>
+            <h2>Important room rental information.</h2>
+          </div>
+          <p>Clear expectations help each reservation run smoothly and protect the space for everyone who uses it.</p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <div class="label">Setup and teardown</div>
+            <h3>Time is built into the rental.</h3>
+            <p>Room rental comes with a 15-minute setup and tear down time. Bands are allowed to begin setup 15 minutes before the reservation and must be completely vacated 15 minutes after the reserved time.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="label">Room tech</div>
+            <h3>Support is present.</h3>
+            <p>Each room reservation comes with a room tech present at all times.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">See the rooms</div>
+              <h2>Photos help people imagine their project here.</h2>
+            </div>
+            <p>Use this gallery for room photos, rehearsal setups, stage shots, sound booth photos, and production examples.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item tall" style="--image: url('rental-gallery-1.jpg');"><div class="caption">Performance room</div></div>
+            <div class="gallery-item" style="--image: url('rental-gallery-2.jpg');"><div class="caption">Band rehearsal setup</div></div>
+            <div class="gallery-item" style="--image: url('rental-gallery-3.jpg');"><div class="caption">Stage and backline</div></div>
+            <div class="gallery-item" style="--image: url('rental-gallery-4.jpg');"><div class="caption">Sound booth</div></div>
+            <div class="gallery-item" style="--image: url('rental-gallery-5.jpg');"><div class="caption">Creative production space</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Questions</div>
+            <h2>Common room rental questions.</h2>
+          </div>
+          <p>These answers help bands, musicians, and creators understand the spaces before reaching out.</p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>How much is the performance space?</h3>
+            <p>The performance space is listed at $35 per hour with backline and $25 per hour without backline, with a 2 hour minimum.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>What is the sound booth for?</h3>
+            <p>The sound booth is a smaller space suited for spoken word, voice-over, vocal recording, and simple audio or video projects.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can students use the space?</h3>
+            <p>Students enrolled in private instruction may be able to use the spaces for free based on availability and center policies.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Is backline included?</h3>
+            <p>Backline equipment is available for the performance space. The rate depends on whether the rental includes backline use.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Are video or livestream services available?</h3>
+            <p>Multi-camera and livestream support may be available by request. Contact the center for availability and package options.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>How do I reserve a room?</h3>
+            <p>Reach out with your desired date, time, room choice, number of people, project type, and equipment needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Need rehearsal or recording space?</h2>
+            <p>Reach out with your date, time, room choice, project type, and equipment needs. The team can help confirm availability and next steps.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="tel:9857728066">Call or Text</a>
+              <a class="btn btn-secondary" href="contact.html">Request Availability</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p>120 Prevost Drive</p>
+            <p>Houma, Louisiana</p>
+            <p><a href="tel:9857728066">985-772-8066</a></p>
+            <p><a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a></p>
+            <a class="btn btn-primary" href="contact.html" style="margin-top: 12px; width: 100%;">Ask About Rentals</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, camps, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="faculty.html">Faculty</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="contact.html">Schedule a Tour</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

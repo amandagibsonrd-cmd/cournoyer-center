@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Register Now | Cournoyer Center for Music Performance</title>
+  <meta name="description" content="Register for music lessons, group instruction, workshops, and performance programs at Cournoyer Center for Music Performance in Houma, Louisiana." />
+
+  <meta property="og:title" content="Register Now | Cournoyer Center for Music Performance" />
+  <meta property="og:description" content="Start registration for music lessons, group programs, and performance opportunities in Houma, Louisiana." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/register-now.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .small-text, .widget-note, .steps-list {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--silver-light), var(--white), var(--silver-light));
+      color: var(--purple-dark);
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+      padding: 9px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple { background: var(--purple); color: var(--white); }
+
+    .page-hero {
+      position: relative;
+      min-height: 540px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.97) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.54) 100%),
+        url('register-hero.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 140px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 88px 22px 126px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 6.4vw, 5.9rem);
+      max-width: 950px;
+    }
+
+    h2 {
+      font-size: clamp(2.15rem, 4.1vw, 4.2rem);
+      color: var(--purple-dark);
+    }
+
+    h3 {
+      font-size: clamp(1.32rem, 2vw, 2rem);
+      color: var(--purple-dark);
+    }
+
+    .page-hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.28rem);
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .registration-overview {
+      margin-top: -86px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .overview-panel,
+    .widget-panel,
+    .info-card {
+      background: var(--white);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+      padding: 32px;
+      border: 1px solid var(--line);
+    }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p {
+      font-size: 1.08rem;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      counter-reset: steps;
+    }
+
+    .step-card {
+      counter-increment: steps;
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .step-card::before {
+      content: counter(steps);
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--purple);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .step-card p,
+    .info-card p {
+      color: var(--muted);
+      margin: 12px 0 0;
+      font-size: 0.98rem;
+    }
+
+    .registration-widget-section {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .widget-layout {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .info-card {
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+    }
+
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0 0;
+      display: grid;
+      gap: 12px;
+      font-weight: 800;
+    }
+
+    .steps-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .steps-list li::before {
+      content: '♪';
+      color: var(--purple-soft);
+      font-weight: 900;
+    }
+
+    .widget-panel {
+      min-height: 560px;
+      overflow: hidden;
+    }
+
+    .widget-note {
+      background: var(--silver-light);
+      border: 1px dashed rgba(75, 31, 120, 0.35);
+      border-radius: 22px;
+      padding: 28px;
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin-bottom: 22px;
+    }
+
+    .registration-widget-placeholder {
+      min-height: 460px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 85% 20%, rgba(124, 75, 178, 0.16), transparent 30%),
+        linear-gradient(180deg, var(--white), var(--silver-light));
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      text-align: center;
+      color: var(--purple-dark);
+    }
+
+    .registration-widget-placeholder strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .registration-widget-placeholder span {
+      display: block;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .cta {
+      background: var(--white);
+    }
+
+    .cta-panel {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-radius: 36px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.72fr;
+      gap: 42px;
+      align-items: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -70px;
+      top: -70px;
+      border-radius: 50%;
+      background: rgba(199, 201, 209, 0.22);
+    }
+
+    .cta-panel h2 { color: var(--white); }
+
+    .cta-panel p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+    }
+
+    .contact-card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .contact-card p {
+      margin: 0 0 12px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .footer {
+      background: var(--purple-deep);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 42px 22px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer a {
+      display: block;
+      margin-top: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer a:hover { color: var(--white); }
+
+    .small-text {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.62);
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      nav { gap: 12px; font-size: 0.82rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .section-intro,
+      .widget-layout,
+      .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 62px 18px 118px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .registration-overview { margin-top: -70px; }
+      .overview-panel, .widget-panel, .info-card, .cta-panel { padding: 24px; border-radius: 26px; }
+      .hero-buttons, .cta-panel .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">Ready to begin? Complete the registration form and the team will help with the next step.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="room-rentals.html">Room Rentals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Schedule a Tour</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Register for music lessons</div>
+        <h1>Let’s find the right program for your student.</h1>
+        <p>Complete the registration form below and Cournoyer Center will help you get started with the lesson, workshop, or performance program that best fits your student’s age and goals.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#registration-widget">Start Registration</a>
+          <a class="btn btn-secondary" href="contact.html">Ask a Question First</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration-overview">
+      <div class="container">
+        <div class="overview-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Before you register</div>
+              <h2>Getting started is simple.</h2>
+            </div>
+            <p>Families do not need to know the perfect starting point before filling out the form. Share what you know, and the center can help guide placement.</p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <h3>Tell us about your student</h3>
+              <p>Share age, instrument interest, experience level, and what your student is excited to learn.</p>
+            </article>
+
+            <article class="step-card">
+              <h3>Choose the best fit</h3>
+              <p>The team can help guide you toward private lessons, group instruction, workshops, or performance programs.</p>
+            </article>
+
+            <article class="step-card">
+              <h3>Begin making music</h3>
+              <p>Once registration is complete, the center will help with the next steps for scheduling and getting started.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration-widget-section" id="registration-widget">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Registration form</div>
+            <h2>Start here.</h2>
+          </div>
+          <p>This section is ready for the registration widget. Paste the widget embed code inside the marked area in the HTML.</p>
+        </div>
+
+        <div class="widget-layout">
+          <aside class="info-card">
+            <div class="label">Helpful information</div>
+            <h3>What to have ready</h3>
+            <p>Before completing the form, it may help to know your student’s general availability, instrument interest, age, and whether you are interested in lessons, group programs, or performance opportunities.</p>
+            <ul class="steps-list">
+              <li>Student name and age</li>
+              <li>Parent or guardian contact information</li>
+              <li>Instrument or program interest</li>
+              <li>Experience level, if any</li>
+              <li>Scheduling preferences</li>
+            </ul>
+          </aside>
+
+          <div class="widget-panel">
+            <div class="widget-note">
+              Replace the placeholder below with your actual registration widget embed code. Look for the comment that says <strong>PASTE REGISTRATION WIDGET CODE HERE</strong>.
+            </div>
+
+            <div class="registration-widget-placeholder">
+              <!-- PASTE REGISTRATION WIDGET CODE HERE
+
+              Example:
+              <iframe src="YOUR-REGISTRATION-WIDGET-LINK" style="width:100%; min-height:760px; border:0;" loading="lazy"></iframe>
+
+              Or paste the full script/embed code provided by your registration platform.
+              -->
+              <div>
+                <strong>Registration widget goes here</strong>
+                <span><script src="https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF8zMlBKZiIsIldlYnNpdGVJRCI6Indic196c0RKUiIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3p3OFZKTiJ9"></script></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Need help before registering?</h2>
+            <p>Call, text, or email with your student’s age, goals, and instrument interest. The team can help you choose the right place to begin.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="tel:9857728066">Call or Text</a>
+              <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p>120 Prevost Drive</p>
+            <p>Houma, Louisiana</p>
+            <p><a href="tel:9857728066">985-772-8066</a></p>
+            <p><a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a></p>
+            <a class="btn btn-primary" href="#registration-widget" style="margin-top: 12px; width: 100%;">Start Registration</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, camps, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="faculty.html">Faculty</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="contact.html">Schedule a Tour</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

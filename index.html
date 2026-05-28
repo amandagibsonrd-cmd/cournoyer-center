@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cournoyer Center for Music Performance | Music Lessons in Houma, LA</title>
+  <meta name="description" content="Cournoyer Center for Music Performance offers private music lessons, group programs, performance opportunities, songwriting sessions, testimonials, and room rentals in Houma, Louisiana." />
+
+  <meta property="og:title" content="Cournoyer Center for Music Performance | Music Lessons in Houma, LA" />
+  <meta property="og:description" content="Music lessons, group programs, testimonials, and performance opportunities that help students build skill, confidence, and stage experience." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cournoyer Center for Music Performance" />
+  <meta name="twitter:description" content="Music lessons in Houma, Louisiana for students ready to learn, grow, and perform." />
+  <meta name="twitter:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --silver-mid: #9fa3b0;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .price, .small-text, .caption, .program-meta, .video-tag {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--purple), var(--purple-dark));
+      color: var(--white);
+      text-align: center;
+      font-weight: 900;
+      font-size: 0.84rem;
+      letter-spacing: 0.04em;
+      padding: 9px 16px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 245px;
+    }
+
+    .brand-logo {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 0.94rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.78rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-outline { border-color: rgba(75, 31, 120, 0.22); color: var(--purple-dark); background: transparent; }
+
+    .hero {
+      position: relative;
+      min-height: 760px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 82% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.97) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.54) 100%),
+        url('hero-students.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 190px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 96px 22px 150px;
+      display: grid;
+      grid-template-columns: 1.05fr 0.7fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 { font-size: clamp(3rem, 6.8vw, 6.35rem); max-width: 930px; }
+    h2 { font-size: clamp(2.15rem, 4.1vw, 4.2rem); color: var(--purple-dark); }
+    h3 { font-size: clamp(1.28rem, 2vw, 2rem); color: var(--purple-dark); }
+
+    .hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.28rem);
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+    .hero-trust {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .pill {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .hero-card {
+      align-self: end;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--purple-dark);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin: 12px 0 18px;
+    }
+
+    .mini-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      font-weight: 800;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .mini-list li { display: flex; align-items: flex-start; gap: 10px; }
+    .mini-list li::before { content: '♪'; color: var(--purple-soft); font-weight: 900; }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p { font-size: 1.08rem; margin: 0; color: var(--muted); }
+
+    .program-finder {
+      margin-top: -110px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .finder-panel, .gallery-panel, .testimonial-panel {
+      background: var(--white);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+      padding: 32px;
+      border: 1px solid var(--line);
+    }
+
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+    .card, .program-feature-card, .faculty-card, .program-card, .benefit, .step, .video-card, .songwriting-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+    }
+
+    .card, .program-feature-card, .faculty-card, .video-card { overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease, border 180ms ease; }
+    .card:hover, .program-feature-card:hover, .faculty-card:hover, .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 48px rgba(42, 16, 72, 0.12);
+      border-color: rgba(124, 75, 178, 0.42);
+    }
+
+    .card-image, .program-feature-image, .faculty-photo, .gallery-item, .story-photo-large, .story-photo-small, .songwriting-image {
+      background: linear-gradient(135deg, rgba(75,31,120,.42), rgba(199,201,209,.18)), var(--image) center/cover no-repeat;
+    }
+
+    .card-image { height: 170px; }
+    .card-body { padding: 24px; }
+
+    .label {
+      color: var(--purple-soft);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .card p, .program-feature-body p, .program-card p, .benefit p, .faculty-card p, .step p, .rental-card p, .video-card p, .songwriting-card p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .photo-story { background: var(--white); padding-top: 24px; }
+    .story-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; align-items: stretch; }
+
+    .story-photo-large, .story-photo-small {
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      min-height: 360px;
+      box-shadow: 0 18px 48px rgba(42, 16, 72, 0.13);
+      border: 1px solid var(--line);
+    }
+
+    .story-photo-small { min-height: 171px; border-radius: 24px; }
+    .story-side { display: grid; grid-template-rows: 1fr 1fr; gap: 18px; }
+
+    .caption {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      right: 18px;
+      background: rgba(22, 7, 37, 0.72);
+      color: var(--white);
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    .benefits, .featured-programs, .testimonials-preview { background: linear-gradient(180deg, var(--white), var(--silver-light)); }
+    .benefit-grid, .faculty-grid, .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .benefit, .step, .program-card { padding: 30px; }
+
+    .icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: var(--purple);
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 28px rgba(75, 31, 120, 0.24);
+    }
+
+    .testimonial-band {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(199, 201, 209, 0.28), transparent 30%),
+        linear-gradient(135deg, var(--purple-deep), var(--purple));
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .testimonial-band h2 { color: var(--white); }
+    .quote-wrap { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 44px; align-items: center; }
+
+    blockquote {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .quote-credit { margin-top: 22px; color: rgba(255, 255, 255, 0.76); font-weight: 800; font-family: Arial, Helvetica, sans-serif; }
+
+    .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .video-frame { position: relative; aspect-ratio: 16 / 9; background: var(--purple-deep); }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .video-content { padding: 22px; }
+
+    .video-tag {
+      display: inline-flex;
+      width: fit-content;
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: var(--silver-light);
+      color: var(--purple-dark);
+      font-weight: 900;
+      font-size: .8rem;
+      margin-bottom: 12px;
+      border: 1px solid var(--line);
+    }
+
+    .programs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .program-card.featured { background: linear-gradient(135deg, var(--purple-dark), var(--purple)); color: var(--white); border-color: rgba(255, 255, 255, 0.18); }
+    .program-card.featured h3, .program-card.featured p { color: var(--white); }
+
+    .price {
+      display: inline-flex;
+      margin-top: 18px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--silver-light);
+      color: var(--purple-dark);
+      font-weight: 900;
+      font-size: 0.86rem;
+    }
+
+    .featured .price { background: rgba(255, 255, 255, 0.14); color: var(--white); border: 1px solid rgba(255, 255, 255, 0.2); }
+
+    .program-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .program-feature-card { display: flex; flex-direction: column; min-height: 100%; }
+    .program-feature-image { min-height: 210px; }
+    .program-feature-body { padding: 26px; display: flex; flex-direction: column; flex: 1; }
+
+    .program-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; font-size: 0.82rem; font-weight: 900; color: var(--purple-dark); }
+    .program-meta span { background: var(--silver-light); border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; }
+    .program-feature-body .btn { margin-top: auto; width: fit-content; }
+
+    .songwriting-spotlight { background: var(--white); }
+    .songwriting-card { overflow: hidden; display: grid; grid-template-columns: .9fr 1.1fr; }
+    .songwriting-image { min-height: 410px; --image: url('johnny-indovina-songwriting.jpg'); }
+    .songwriting-content { padding: 44px; display: flex; flex-direction: column; justify-content: center; }
+
+    .performance-gallery { background: var(--silver-light); padding-top: 0; }
+    .gallery-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; grid-template-rows: 220px 220px; gap: 14px; }
+    .gallery-item { position: relative; border-radius: 24px; overflow: hidden; min-height: 180px; }
+    .gallery-item.tall { grid-row: span 2; }
+
+    .faculty { background: var(--white); }
+    .faculty-photo { aspect-ratio: 4 / 3; }
+    .faculty-card-content { padding: 24px; }
+
+    .how-grid { counter-reset: steps; }
+    .step { counter-increment: steps; }
+    .step::before {
+      content: counter(steps);
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--purple);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .rentals {
+      background:
+        linear-gradient(rgba(22, 7, 37, 0.90), rgba(42, 16, 72, 0.92)),
+        url('stage-room.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .rentals h2, .rentals h3 { color: var(--white); }
+    .rentals .section-intro p { color: rgba(255, 255, 255, 0.78); }
+    .rental-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .rental-card { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 22px; padding: 24px; backdrop-filter: blur(8px); }
+    .rental-card p { color: rgba(255, 255, 255, 0.75); }
+
+    .cta { background: var(--white); }
+    .cta-panel {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-radius: 36px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.72fr;
+      gap: 42px;
+      align-items: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::after { content: ''; position: absolute; width: 260px; height: 260px; right: -70px; top: -70px; border-radius: 50%; background: rgba(199, 201, 209, 0.22); }
+    .cta-panel h2 { color: var(--white); }
+    .cta-panel p { color: rgba(255, 255, 255, 0.78); margin: 18px 0 0; font-size: 1.08rem; }
+
+    .contact-card { position: relative; z-index: 2; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 24px; padding: 26px; }
+    .contact-card p { margin: 0 0 12px; color: var(--white); font-weight: 800; }
+
+    .footer { background: var(--purple-deep); color: rgba(255, 255, 255, 0.76); padding: 42px 22px; }
+    .footer-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 28px; }
+    .footer strong { color: var(--white); display: block; margin-bottom: 8px; font-size: 1.05rem; }
+    .footer a { display: block; margin-top: 6px; }
+    .footer a:hover { color: var(--white); }
+    .small-text { font-size: 0.87rem; color: rgba(255, 255, 255, 0.62); margin-top: 22px; }
+
+    @media (max-width: 1120px) {
+      nav { gap: 10px; font-size: 0.72rem; }
+      .nav-actions .btn { padding: 12px 16px; font-size: .84rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+        font-size: .9rem;
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .hero-inner, .section-intro, .quote-wrap, .cta-panel, .story-grid, .songwriting-card { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .hero-inner { padding-top: 80px; }
+      .hero-card { align-self: auto; }
+      .cards, .rental-grid, .program-list, .video-grid { grid-template-columns: repeat(2, 1fr); }
+      .benefit-grid, .faculty-grid, .how-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gallery-item.tall { grid-row: auto; }
+      .gallery-item { min-height: 260px; }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 60px 18px 128px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .program-finder { margin-top: -80px; }
+      .finder-panel, .cta-panel, .gallery-panel, .testimonial-panel { padding: 24px; border-radius: 26px; }
+      .cards, .programs-grid, .rental-grid, .footer-grid, .gallery-grid, .program-list, .video-grid { grid-template-columns: 1fr; }
+      .hero-buttons, .cta-panel .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+      .story-photo-large, .story-photo-small, .gallery-item, .songwriting-image { min-height: 240px; }
+      .songwriting-content { padding: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">Now welcoming new students for private lessons, group programs, songwriting, and performance opportunities.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private</a>
+        <a href="group-instruction.html">Group</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="room-rentals.html">Rentals</a>
+        <a href="songwriting-sessions.html">Songwriting</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://youtube.com/@cournoyercenter?si=sq9bW7ZVCN496Co2" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="register-now.html">Register Now</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Music lessons in Houma, Louisiana</div>
+          <h1>Music lessons that build skill, confidence, and stage experience.</h1>
+          <p>At Cournoyer Center for Music Performance, students learn their instrument, play real songs, and grow through private lessons, group programs, virtual songwriting, and live performance opportunities.</p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="register-now.html">Register Now</a>
+            <a class="btn btn-secondary" href="#programs">View Programs</a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="pill">Private lessons</span>
+            <span class="pill">Band rehearsals</span>
+            <span class="pill">Workshops & camps</span>
+            <span class="pill">Virtual songwriting</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Private lessons are the start. Performance is the difference.</h3>
+          <p>Students are encouraged to grow as musicians, collaborators, and confident performers.</p>
+          <ul class="mini-list">
+            <li>One-on-one instruction for kids, teens, and adults</li>
+            <li>Group programs for younger beginners</li>
+            <li>Band rehearsals and live performance opportunities</li>
+            <li>Unscripted student and parent testimonial videos</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="program-finder" id="programs">
+      <div class="container">
+        <div class="finder-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Find the right fit</div>
+              <h2>Where should your student begin?</h2>
+            </div>
+            <p>Whether your child is just starting out or ready to perform on stage, the right program starts with age, experience, and confidence level.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-image" style="--image: url('early-childhood-music.jpg');"></div>
+              <div class="card-body">
+                <div class="label">Ages 2 to 4</div>
+                <h3>Early Childhood Music</h3>
+                <p>A playful introduction to rhythm, piano, listening, and musical confidence for the youngest students.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image" style="--image: url('rookies-music.jpg');"></div>
+              <div class="card-body">
+                <div class="label">Ages 5 to 6</div>
+                <h3>The Rookies</h3>
+                <p>A beginner-friendly program for younger students who are ready to start building real musical skills.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image" style="--image: url('private-lessons.jpg');"></div>
+              <div class="card-body">
+                <div class="label">Ages 7+</div>
+                <h3>Private Lessons</h3>
+                <p>One-on-one instruction in guitar, bass, drums, piano, voice, and more, tailored to each student.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-image" style="--image: url('performance-program.jpg');"></div>
+              <div class="card-body">
+                <div class="label">Ready to perform</div>
+                <h3>Performance Program</h3>
+                <p>Private lessons plus weekly band rehearsal for students ready to grow through collaboration and live shows.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-story">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Inside the center</div>
+            <h2>Real lessons. Real rehearsals. Real growth.</h2>
+          </div>
+          <p>Show parents what it feels like inside Cournoyer Center: students learning, instructors teaching, bands rehearsing, and music becoming part of their weekly life.</p>
+        </div>
+
+        <div class="story-grid">
+          <div class="story-photo-large" style="--image: url('student-lesson.jpg');">
+            <div class="caption">One-on-one instruction that meets students where they are.</div>
+          </div>
+          <div class="story-side">
+            <div class="story-photo-small" style="--image: url('band-rehearsal.jpg');">
+              <div class="caption">Band rehearsal and collaboration.</div>
+            </div>
+            <div class="story-photo-small" style="--image: url('student-performance.jpg');">
+              <div class="caption">Performance opportunities that build confidence.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">More than music lessons</div>
+            <h2>A place where students grow.</h2>
+          </div>
+          <p>Music gives students more than a new skill. It gives them confidence, focus, friendships, discipline, and a reason to be excited about showing up each week.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit">
+            <div class="icon">★</div>
+            <h3>Build Confidence</h3>
+            <p>Students gain pride as they learn songs, improve technique, and see their progress over time.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="icon">♫</div>
+            <h3>Make Music with Others</h3>
+            <p>Group programs and band rehearsals help students learn teamwork, timing, listening, and collaboration.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="icon">✦</div>
+            <h3>Get Stage Experience</h3>
+            <p>Performance opportunities give students a goal to work toward and a reason to keep practicing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-preview" id="testimonials">
+      <div class="container">
+        <div class="testimonial-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Unscripted testimonials</div>
+              <h2>Hear from our students and families.</h2>
+            </div>
+            <p>These videos are unscripted testimonials from Cournoyer Center students and parents. They help new families hear what the center is like from the people who experience it firsthand.</p>
+          </div>
+
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-frame"><iframe src="https://www.youtube.com/embed/A83G6cYfVfI" title="Cournoyer Center student testimonial" allowfullscreen loading="lazy"></iframe></div>
+              <div class="video-content"><span class="video-tag">Student testimonial</span><h3>Student Story</h3><p>A real student shares what music at Cournoyer Center has meant to them.</p></div>
+            </article>
+
+            <article class="video-card">
+              <div class="video-frame"><iframe src="https://www.youtube.com/embed/aWeWhY48efk" title="Cournoyer Center parent testimonial" allowfullscreen loading="lazy"></iframe></div>
+              <div class="video-content"><span class="video-tag">Parent testimonial</span><h3>Parent Story</h3><p>A parent shares the difference they have seen through music lessons and performance.</p></div>
+            </article>
+
+            <article class="video-card">
+              <div class="video-frame"><iframe src="https://www.youtube.com/embed/EQwx6JbvZRw" title="Cournoyer Center parent testimonial" allowfullscreen loading="lazy"></iframe></div>
+              <div class="video-content"><span class="video-tag">Parent testimonial</span><h3>Family Perspective</h3><p>A family shares why Cournoyer Center has become part of their child’s growth.</p></div>
+            </article>
+          </div>
+
+          <div class="hero-buttons" style="justify-content:center; margin-top: 34px;">
+            <a class="btn btn-purple" href="testimonials.html">View All Testimonials</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="songwriting-spotlight">
+      <div class="container">
+        <div class="songwriting-card">
+          <div class="songwriting-image"></div>
+          <div class="songwriting-content">
+            <div class="label">Virtual songwriting</div>
+            <h2>Songwriting Sessions with Johnny Indovina.</h2>
+            <p>Exclusive virtual one-on-one songwriting sessions with seasoned musician Johnny Indovina. These hour-long online lessons help writers refine lyrics, melody, structure, emotional clarity, and creative direction.</p>
+            <div class="program-meta">
+              <span>Virtual</span>
+              <span>One-on-one</span>
+              <span>Hour-long sessions</span>
+              <span>Free discovery session</span>
+            </div>
+            <div class="hero-buttons">
+              <a class="btn btn-purple" href="songwriting-sessions.html">Learn About Songwriting</a>
+              <a class="btn btn-outline" href="contact.html">Schedule Discovery Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-programs" id="featured-programs">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Featured workshops</div>
+            <h2>More ways to learn, play, and grow.</h2>
+          </div>
+          <p>Use this section for rotating group instruction programs, seasonal workshops, camps, and short-term classes. Each card can link to its own page with dates, pricing, instructor details, and registration.</p>
+        </div>
+
+        <div class="program-list">
+          <article class="program-feature-card">
+            <div class="program-feature-image" style="--image: url('rockin-tots.jpg');"></div>
+            <div class="program-feature-body">
+              <div class="label">Early childhood</div>
+              <h3>Rockin’ Tots</h3>
+              <p>A music-based group program for ages 2 to 5 focused on rhythm, movement, listening, turn-taking, and early classroom readiness.</p>
+              <div class="program-meta"><span>Ages 2 to 5</span><span>Wednesdays</span><span>10:00 AM</span></div>
+              <a class="btn btn-purple" href="group-instruction.html">Learn More</a>
+            </div>
+          </article>
+
+          <article class="program-feature-card">
+            <div class="program-feature-image" style="--image: url('vocal-technique.jpg');"></div>
+            <div class="program-feature-body">
+              <div class="label">Voice workshop</div>
+              <h3>Vocal Technique for Singers</h3>
+              <p>A group workshop helping students improve their voice safely through technique, musical concepts, performance skills, and favorite genres.</p>
+              <div class="program-meta"><span>Technique</span><span>Performance skills</span><span>Group class</span></div>
+              <a class="btn btn-purple" href="group-instruction.html">Learn More</a>
+            </div>
+          </article>
+
+          <article class="program-feature-card">
+            <div class="program-feature-image" style="--image: url('beginning-guitar.jpg');"></div>
+            <div class="program-feature-body">
+              <div class="label">Beginner guitar</div>
+              <h3>Beginning Guitar Workshop</h3>
+              <p>A six-week group lesson for beginning guitarists covering tuning, tablature, chords, strumming, scales, and popular songs.</p>
+              <div class="program-meta"><span>6 weeks</span><span>Beginner friendly</span><span>$80</span></div>
+              <a class="btn btn-purple" href="group-instruction.html">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="faculty" id="faculty">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Faculty</div>
+            <h2>Learn from experienced local musicians.</h2>
+          </div>
+          <p>Our instructors are working musicians and passionate teachers who help students build real skills while keeping lessons encouraging, structured, and fun.</p>
+        </div>
+
+        <div class="faculty-grid">
+          <article class="faculty-card">
+            <div class="faculty-photo" style="--image: url('faculty-rob.jpg');"></div>
+            <div class="faculty-card-content">
+              <h3>Rob Cournoyer</h3>
+              <p>Founder, instructor, and performance mentor helping students grow in skill, confidence, and musicianship.</p>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-photo" style="--image: url('faculty-mark.jpg');"></div>
+            <div class="faculty-card-content">
+              <h3>Mark Kryvanick</h3>
+              <p>Instructor and musician supporting students through structured lessons and encouraging musical growth.</p>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-photo" style="--image: url('faculty-amos.jpg');"></div>
+            <div class="faculty-card-content">
+              <h3>Amos Rodrigues</h3>
+              <p>Instructor and mentor helping students build confidence, technique, and a stronger connection to music.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-buttons" style="justify-content:center; margin-top: 34px;">
+          <a class="btn btn-outline" href="faculty.html">Meet the Full Faculty</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="rentals" id="rentals">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow">Room Rentals</div>
+            <h2>Space for rehearsals, recordings, and creative work.</h2>
+          </div>
+          <p>Cournoyer Center also offers performance space and a sound booth for musicians, creators, teachers, and performers who need a professional local setting.</p>
+        </div>
+
+        <div class="rental-grid">
+          <article class="rental-card"><h3>Rehearsals</h3><p>Space for bands, ensembles, and individual practice.</p></article>
+          <article class="rental-card"><h3>Recording</h3><p>A local setting for music, voice, and creative projects.</p></article>
+          <article class="rental-card"><h3>Podcasting</h3><p>A flexible space for creators and interview-style content.</p></article>
+          <article class="rental-card"><h3>Small Events</h3><p>Options for workshops, meetings, showcases, and music-related gatherings.</p></article>
+        </div>
+
+        <div class="hero-buttons" style="justify-content:center; margin-top: 34px;">
+          <a class="btn btn-primary" href="room-rentals.html">View Room Rental Options</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Ready to help your student start making music?</h2>
+            <p>Whether your child is brand new to music or ready to perform on stage, Cournoyer Center can help you find the right place to begin.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="tel:9857728066">Call or Text</a>
+              <a class="btn btn-secondary" href="register-now.html">Register Now</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p>120 Prevost Drive</p>
+            <p>Houma, Louisiana</p>
+            <p><a href="tel:9857728066">985-772-8066</a></p>
+            <p><a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a></p>
+            <a class="btn btn-primary" href="contact.html" style="margin-top: 12px; width: 100%;">Ask a Question</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, virtual songwriting sessions, testimonials, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="testimonials.html">Testimonials</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="register-now.html">Register Now</a>
+        <a href="https://youtube.com/@cournoyercenter?si=sq9bW7ZVCN496Co2" target="_blank" rel="noopener">YouTube Channel</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

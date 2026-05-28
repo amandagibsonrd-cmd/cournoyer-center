@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Cournoyer Center for Music Performance</title>
+  <meta name="description" content="Contact Cournoyer Center for Music Performance in Houma, Louisiana to ask about music lessons, group programs, performance opportunities, room rentals, and registration." />
+
+  <meta property="og:title" content="Contact | Cournoyer Center for Music Performance" />
+  <meta property="og:description" content="Ask about music lessons, tours, registration, performance programs, group classes, and room rentals in Houma, Louisiana." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .small-text, .contact-line, .form-note, input, textarea, select, label {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--silver-light), var(--white), var(--silver-light));
+      color: var(--purple-dark);
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+      padding: 9px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-outline { border-color: rgba(75, 31, 120, 0.22); color: var(--purple-dark); background: transparent; }
+
+    .page-hero {
+      position: relative;
+      min-height: 540px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.97) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.54) 100%),
+        url('contact-hero.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 140px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 88px 22px 126px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 { font-size: clamp(3rem, 6.4vw, 5.9rem); max-width: 950px; }
+    h2 { font-size: clamp(2.15rem, 4.1vw, 4.2rem); color: var(--purple-dark); }
+    h3 { font-size: clamp(1.32rem, 2vw, 2rem); color: var(--purple-dark); }
+
+    .page-hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.28rem);
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .contact-overview {
+      margin-top: -86px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .overview-panel,
+    .contact-card-main,
+    .form-panel,
+    .info-card,
+    .map-panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .overview-panel {
+      border-radius: 32px;
+      padding: 32px;
+    }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p {
+      font-size: 1.08rem;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .quick-grid,
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .info-card {
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .label {
+      color: var(--purple-soft);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .info-card p,
+    .contact-card-main p,
+    .form-note,
+    .map-panel p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .contact-section {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .contact-card-main,
+    .form-panel {
+      border-radius: 32px;
+      padding: 32px;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+    }
+
+    .contact-line {
+      display: block;
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      color: var(--purple-dark);
+      font-weight: 900;
+    }
+
+    .contact-line:hover {
+      background: var(--white);
+    }
+
+    .form-placeholder {
+      margin-top: 22px;
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--silver-light);
+      border: 1px dashed rgba(75, 31, 120, 0.35);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .form-field.full { grid-column: 1 / -1; }
+
+    label {
+      display: block;
+      font-weight: 900;
+      color: var(--purple-dark);
+      margin-bottom: 7px;
+      font-size: .88rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px 14px;
+      font-size: 1rem;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    textarea { min-height: 150px; resize: vertical; }
+
+    .map-section {
+      background: var(--white);
+    }
+
+    .map-panel {
+      border-radius: 34px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+    }
+
+    .map-content {
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .map-placeholder {
+      min-height: 360px;
+      background:
+        linear-gradient(135deg, rgba(75,31,120,.35), rgba(199,201,209,.16)),
+        url('location-map.jpg') center/cover no-repeat;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      text-align: center;
+      padding: 24px;
+    }
+
+    .map-placeholder span {
+      background: rgba(22, 7, 37, .76);
+      padding: 14px 18px;
+      border-radius: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+    }
+
+    .footer {
+      background: var(--purple-deep);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 42px 22px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer a {
+      display: block;
+      margin-top: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer a:hover { color: var(--white); }
+
+    .small-text {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.62);
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      nav { gap: 12px; font-size: 0.82rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .section-intro,
+      .contact-layout,
+      .map-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid,
+      .info-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 62px 18px 118px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .contact-overview { margin-top: -70px; }
+      .overview-panel, .contact-card-main, .form-panel { padding: 24px; border-radius: 26px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">Questions about lessons, programs, registration, or room rentals? We are happy to help.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="room-rentals.html">Room Rentals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="register-now.html">Register Now</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Contact Cournoyer Center</div>
+        <h1>Let’s find the right next step.</h1>
+        <p>Whether you are asking about private lessons, group instruction, performance opportunities, room rentals, or registration, reach out and the team can help guide you.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="tel:9857728066">Call or Text</a>
+          <a class="btn btn-secondary" href="#contact-form">Send a Message</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-overview">
+      <div class="container">
+        <div class="overview-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">How we can help</div>
+              <h2>Tell us what you are interested in.</h2>
+            </div>
+            <p>Families and renters do not need to know every detail before reaching out. Share the basics, and Cournoyer Center can help you decide where to begin.</p>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <div class="label">Lessons</div>
+              <h3>Private instruction</h3>
+              <p>Ask about instruments, instructors, student age, availability, and how to get started.</p>
+            </article>
+
+            <article class="info-card">
+              <div class="label">Programs</div>
+              <h3>Group and performance</h3>
+              <p>Ask about workshops, camps, group classes, band rehearsal, and performance placement.</p>
+            </article>
+
+            <article class="info-card">
+              <div class="label">Rentals</div>
+              <h3>Rooms and creative space</h3>
+              <p>Ask about rehearsal space, sound booth use, backline, recording, and tech services.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact-form">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Reach out</div>
+            <h2>Contact the center.</h2>
+          </div>
+          <p>This page includes a ready-to-replace form area. You can connect it to a real form service later, or replace it with your platform’s embed code.</p>
+        </div>
+
+        <div class="contact-layout">
+          <aside class="contact-card-main">
+            <div class="label">Contact information</div>
+            <h3>Cournoyer Center for Music Performance</h3>
+            <p>120 Prevost Drive<br />Houma, Louisiana 70364</p>
+            <a class="contact-line" href="tel:9857728066">Call or text: 985-772-8066</a>
+            <a class="contact-line" href="mailto:info@cournoyercenter.com">Email: info@cournoyercenter.com</a>
+            <a class="contact-line" href="register-now.html">Register Now</a>
+          </aside>
+
+          <div class="form-panel">
+            <div class="label">Message form</div>
+            <h3>Send a message</h3>
+            <p class="form-note">This is a styled form layout. To make it send emails, connect it to a form service or replace this section with your actual form embed.</p>
+
+            <div class="form-placeholder">
+              <form action="#" method="post">
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" />
+                  </div>
+                  <div class="form-field">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Phone number" />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email address" />
+                  </div>
+                  <div class="form-field">
+                    <label for="interest">I am interested in</label>
+                    <select id="interest" name="interest">
+                      <option>Private lessons</option>
+                      <option>Group instruction</option>
+                      <option>Performance Program</option>
+                      <option>Room rentals</option>
+                      <option>Registration help</option>
+                      <option>Something else</option>
+                    </select>
+                  </div>
+                  <div class="form-field full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us your student’s age, instrument interest, program question, or rental needs."></textarea>
+                  </div>
+                </div>
+                <div class="hero-buttons">
+                  <button class="btn btn-purple" type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <div class="map-panel">
+          <div class="map-content">
+            <div class="label">Visit us</div>
+            <h2>Located in Houma, Louisiana.</h2>
+            <p>Cournoyer Center for Music Performance is located at 120 Prevost Drive in Houma. Use this section for a Google Maps embed or a photo of the building exterior.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-purple" href="https://www.google.com/maps/search/?api=1&query=120%20Prevost%20Drive%20Houma%20LA%2070364" target="_blank" rel="noopener">Open in Google Maps</a>
+              <a class="btn btn-outline" href="register-now.html">Register Now</a>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <span>Google Map or exterior photo goes here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, camps, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="faculty.html">Faculty</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="register-now.html">Register Now</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Group Instruction | Cournoyer Center for Music Performance</title>
+  <meta name="description" content="Explore group music classes, workshops, and seasonal programs at Cournoyer Center for Music Performance in Houma, Louisiana." />
+
+  <meta property="og:title" content="Group Instruction | Cournoyer Center for Music Performance" />
+  <meta property="og:description" content="Group music classes and workshops in Houma, Louisiana for young beginners, vocalists, guitar students, and growing musicians." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/group-instruction.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .price, .small-text, .caption, .program-meta, .detail-list {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--silver-light), var(--white), var(--silver-light));
+      color: var(--purple-dark);
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+      padding: 9px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple {
+      background: var(--purple);
+      color: var(--white);
+    }
+
+    .btn-outline {
+      border-color: rgba(75, 31, 120, 0.22);
+      color: var(--purple-dark);
+      background: transparent;
+    }
+
+    .page-hero {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.97) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.54) 100%),
+        url('group-instruction-hero.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 140px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 90px 22px 128px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 6.6vw, 6rem);
+      max-width: 920px;
+    }
+
+    h2 {
+      font-size: clamp(2.15rem, 4.1vw, 4.2rem);
+      color: var(--purple-dark);
+    }
+
+    h3 {
+      font-size: clamp(1.32rem, 2vw, 2rem);
+      color: var(--purple-dark);
+    }
+
+    .page-hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.28rem);
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p {
+      font-size: 1.08rem;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .program-overview {
+      margin-top: -86px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .overview-panel {
+      background: var(--white);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+      padding: 32px;
+      border: 1px solid var(--line);
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .quick-card {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px;
+    }
+
+    .label {
+      color: var(--purple-soft);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .quick-card p,
+    .program-card p,
+    .detail-card p,
+    .faq-card p {
+      color: var(--muted);
+      margin: 12px 0 0;
+      font-size: 0.98rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .program-section {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .program-stack {
+      display: grid;
+      gap: 26px;
+    }
+
+    .program-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      min-height: 420px;
+    }
+
+    .program-card.reverse {
+      grid-template-columns: 1.12fr 0.88fr;
+    }
+
+    .program-image {
+      background: linear-gradient(135deg, rgba(75,31,120,.38), rgba(199,201,209,.16)), var(--image) center/cover no-repeat;
+      min-height: 360px;
+    }
+
+    .program-content {
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .program-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 22px;
+      font-size: 0.82rem;
+      font-weight: 900;
+      color: var(--purple-dark);
+    }
+
+    .program-meta span {
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .detail-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .detail-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .detail-list li::before {
+      content: '♪';
+      color: var(--purple-soft);
+      font-weight: 900;
+    }
+
+    .details {
+      background: var(--white);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .detail-card,
+    .faq-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+    }
+
+    .testimonial-band {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(199, 201, 209, 0.28), transparent 30%),
+        linear-gradient(135deg, var(--purple-deep), var(--purple));
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .testimonial-band h2 { color: var(--white); }
+
+    .quote-wrap {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    blockquote {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .quote-credit {
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.76);
+      font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .faq {
+      background: var(--silver-light);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .cta {
+      background: var(--white);
+    }
+
+    .cta-panel {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-radius: 36px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.72fr;
+      gap: 42px;
+      align-items: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -70px;
+      top: -70px;
+      border-radius: 50%;
+      background: rgba(199, 201, 209, 0.22);
+    }
+
+    .cta-panel h2 { color: var(--white); }
+
+    .cta-panel p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contact-card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .contact-card p {
+      margin: 0 0 12px;
+      color: var(--white);
+      font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer {
+      background: var(--purple-deep);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 42px 22px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer a {
+      display: block;
+      margin-top: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer a:hover { color: var(--white); }
+
+    .small-text {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.62);
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      nav { gap: 12px; font-size: 0.82rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .section-intro,
+      .quote-wrap,
+      .cta-panel,
+      .program-card,
+      .program-card.reverse {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid,
+      .detail-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 62px 18px 118px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .program-overview { margin-top: -70px; }
+      .overview-panel, .cta-panel { padding: 24px; border-radius: 26px; }
+      .program-content { padding: 30px; }
+      .program-image { min-height: 250px; }
+      .hero-buttons, .cta-panel .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">Group classes and workshops are a fun way for students to learn, connect, and build confidence.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="room-rentals.html">Room Rentals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Schedule a Tour</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Group music classes in Houma</div>
+        <h1>Group instruction, workshops, and music programs for growing students.</h1>
+        <p>From early childhood music to vocal technique and beginner guitar, group instruction gives students a supportive way to learn, explore, and build musical confidence.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="register-now.html">Register Now</a>
+          <a class="btn btn-secondary" href="#programs">View Current Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="program-overview">
+      <div class="container">
+        <div class="overview-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Why group instruction</div>
+              <h2>Learning music together makes it fun to keep going.</h2>
+            </div>
+            <p>Group programs help students build rhythm, listening skills, confidence, social connection, and musical curiosity in a setting that feels encouraging instead of intimidating.</p>
+          </div>
+
+          <div class="quick-grid">
+            <article class="quick-card">
+              <div class="label">Connection</div>
+              <h3>Students learn with others</h3>
+              <p>Group classes help students feel less alone as they learn new skills and practice together.</p>
+            </article>
+
+            <article class="quick-card">
+              <div class="label">Confidence</div>
+              <h3>A supportive first step</h3>
+              <p>Workshops can be a great way to try music before committing to private lessons or performance programs.</p>
+            </article>
+
+            <article class="quick-card">
+              <div class="label">Growth</div>
+              <h3>Built around real skills</h3>
+              <p>Programs focus on musical foundations like rhythm, technique, listening, chords, performance, and creativity.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="program-section" id="programs">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Current programs</div>
+            <h2>Choose the right group class or workshop.</h2>
+          </div>
+          <p>Use these sections for current program details. You can update dates, prices, registration links, and class times as each session changes.</p>
+        </div>
+
+        <div class="program-stack">
+          <article class="program-card">
+            <div class="program-image" style="--image: url('rockin-tots.jpg');"></div>
+            <div class="program-content">
+              <div class="label">Early childhood music</div>
+              <h3>Rockin’ Tots</h3>
+              <p>A music-based group program for young children focused on rhythm, movement, listening, turn-taking, and early classroom readiness. This is a great first step for families who want to introduce music in a playful and age-appropriate way.</p>
+              <div class="program-meta">
+                <span>Ages 2 to 5</span>
+                <span>Wednesdays</span>
+                <span>10:00 AM</span>
+              </div>
+              <ul class="detail-list">
+                <li>Encourages listening, movement, and participation</li>
+                <li>Supports rhythm, social skills, and early music awareness</li>
+                <li>Designed for young children and their developmental stage</li>
+              </ul>
+              <div class="hero-buttons">
+                <a class="btn btn-purple" href="register-now.html">Register Now</a>
+                <a class="btn btn-outline" href="contact.html">Ask a Question</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="program-card reverse">
+            <div class="program-content">
+              <div class="label">Voice workshop</div>
+              <h3>Vocal Technique for Singers</h3>
+              <p>A group workshop for singers who want to strengthen their voice safely while learning technique, musical concepts, performance skills, and how to approach songs with more confidence.</p>
+              <div class="program-meta">
+                <span>Voice</span>
+                <span>Technique</span>
+                <span>Performance skills</span>
+              </div>
+              <ul class="detail-list">
+                <li>Helps singers understand healthy vocal habits</li>
+                <li>Builds confidence with songs and performance</li>
+                <li>Supports students who enjoy different genres and styles</li>
+              </ul>
+              <div class="hero-buttons">
+                <a class="btn btn-purple" href="register-now.html">Register Now</a>
+                <a class="btn btn-outline" href="contact.html">Ask a Question</a>
+              </div>
+            </div>
+            <div class="program-image" style="--image: url('vocal-technique.jpg');"></div>
+          </article>
+
+          <article class="program-card">
+            <div class="program-image" style="--image: url('beginning-guitar.jpg');"></div>
+            <div class="program-content">
+              <div class="label">Beginner guitar</div>
+              <h3>Beginning Guitar Workshop</h3>
+              <p>A six-week group lesson for beginning guitarists. Students learn foundational guitar skills in a supportive group setting while getting a feel for chords, rhythm, songs, and basic musicianship.</p>
+              <div class="program-meta">
+                <span>6 weeks</span>
+                <span>Beginner friendly</span>
+                <span>$80</span>
+              </div>
+              <ul class="detail-list">
+                <li>Covers tuning, tablature, chords, and strumming</li>
+                <li>Introduces scales, rhythm, and popular songs</li>
+                <li>A helpful starting point before private guitar lessons</li>
+              </ul>
+              <div class="hero-buttons">
+                <a class="btn btn-purple" href="register-now.html">Register Now</a>
+                <a class="btn btn-outline" href="contact.html">Ask a Question</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Good to know</div>
+            <h2>Who group instruction is best for.</h2>
+          </div>
+          <p>Group classes are useful for beginners, younger students, students who enjoy learning with others, and families looking for a lower-pressure way to explore music.</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <div class="label">New students</div>
+            <h3>A welcoming first step</h3>
+            <p>Group workshops let students try music in a supportive setting before deciding what path fits best.</p>
+          </article>
+
+          <article class="detail-card">
+            <div class="label">Younger students</div>
+            <h3>Movement and participation</h3>
+            <p>Early childhood programs help younger students build rhythm, listening skills, confidence, and comfort in a classroom-style environment.</p>
+          </article>
+
+          <article class="detail-card">
+            <div class="label">Growing musicians</div>
+            <h3>Extra skill building</h3>
+            <p>Workshops can support private lessons by focusing on a specific skill, instrument, or performance area.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-band">
+      <div class="container quote-wrap">
+        <div>
+          <div class="eyebrow">Student growth</div>
+          <h2>Confidence grows when students feel supported.</h2>
+        </div>
+        <div>
+          <blockquote>“Music becomes more exciting when students get to learn, participate, and grow alongside others.”</blockquote>
+          <div class="quote-credit">Cournoyer Center for Music Performance</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Questions</div>
+            <h2>Common questions about group classes.</h2>
+          </div>
+          <p>These short answers help parents understand how to choose a program and what to expect before registering.</p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>Does my child need experience?</h3>
+            <p>Many group programs are beginner-friendly. If a class requires experience, that can be noted in the program details.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>How do I know which class is right?</h3>
+            <p>Start with your child’s age, interest, and comfort level. You can also contact the center for help choosing the best fit.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can group classes lead to private lessons?</h3>
+            <p>Yes. Group instruction can be a great introduction before starting private lessons or joining a performance program.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Do classes change seasonally?</h3>
+            <p>Yes. Workshops, camps, and group programs can rotate throughout the year based on interest, instructor availability, and seasonal scheduling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Ready to find the right group program?</h2>
+            <p>Reach out with your student’s age, interests, and experience level. The team can help guide you toward the best place to start.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="tel:9857728066">Call or Text</a>
+              <a class="btn btn-secondary" href="contact.html">Ask About Classes</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p>120 Prevost Drive</p>
+            <p>Houma, Louisiana</p>
+            <p><a href="tel:9857728066">985-772-8066</a></p>
+            <p><a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a></p>
+            <a class="btn btn-primary" href="register-now.html" style="margin-top: 12px; width: 100%;">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, camps, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="faculty.html">Faculty</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="contact.html">Schedule a Tour</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

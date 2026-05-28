@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Virtual Songwriting Sessions with Johnny Indovina | Cournoyer Center</title>
+  <meta name="description" content="Join virtual one-on-one songwriting sessions with Johnny Indovina through Cournoyer Center for Music Performance. Learn songwriting, creative development, and receive personalized feedback from an experienced recording artist." />
+
+  <meta property="og:title" content="Virtual Songwriting Sessions with Johnny Indovina" />
+  <meta property="og:description" content="Exclusive virtual one-on-one songwriting sessions with Johnny Indovina through Cournoyer Center for Music Performance." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/songwriting-sessions.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .small-text, .tag-list, .detail-list, .caption, .price, .bio-note, .link-grid a {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--purple), var(--purple-dark));
+      color: var(--white);
+      text-align: center;
+      font-weight: 900;
+      font-size: 0.84rem;
+      letter-spacing: 0.04em;
+      padding: 9px 16px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-outline { border-color: rgba(75, 31, 120, 0.22); color: var(--purple-dark); background: transparent; }
+
+    .page-hero {
+      position: relative;
+      min-height: 680px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.98) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.48) 100%),
+        url('johnny-indovina-songwriting.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 155px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 92px 22px 140px;
+      display: grid;
+      grid-template-columns: 1fr .78fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,.95);
+      color: var(--purple-dark);
+      border-radius: 32px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.62);
+    }
+
+    .hero-card p { color: var(--muted); margin: 12px 0 0; }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 { font-size: clamp(3rem, 6.4vw, 6rem); max-width: 980px; }
+    h2 { font-size: clamp(2.15rem, 4.1vw, 4.2rem); color: var(--purple-dark); }
+    h3 { font-size: clamp(1.32rem, 2vw, 2rem); color: var(--purple-dark); }
+
+    .page-hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.28rem);
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .overview {
+      margin-top: -86px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .overview-panel,
+    .program-card,
+    .detail-card,
+    .bio-card,
+    .faq-card,
+    .cta-panel,
+    .links-panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .overview-panel,
+    .links-panel {
+      border-radius: 32px;
+      padding: 32px;
+    }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p {
+      font-size: 1.08rem;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .highlight-grid,
+    .detail-grid,
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .highlight-card,
+    .detail-card,
+    .faq-card {
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+    }
+
+    .highlight-card {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+      border: 1px solid var(--line);
+    }
+
+    .label {
+      color: var(--purple-soft);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .highlight-card p,
+    .program-card p,
+    .detail-card p,
+    .bio-card p,
+    .faq-card p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .program-section {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .program-card {
+      border-radius: 34px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+    }
+
+    .program-image {
+      min-height: 430px;
+      background: linear-gradient(135deg, rgba(75,31,120,.35), rgba(199,201,209,.16)), url('johnny-indovina-lesson.jpg') center/cover no-repeat;
+    }
+
+    .program-content {
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 22px;
+      font-size: 0.82rem;
+      font-weight: 900;
+      color: var(--purple-dark);
+    }
+
+    .tag-list span {
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .detail-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .detail-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .detail-list li::before {
+      content: '♪';
+      color: var(--purple-soft);
+      font-weight: 900;
+    }
+
+    .details { background: var(--white); }
+
+    .detail-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .bio-section {
+      background: var(--silver-light);
+    }
+
+    .bio-card {
+      border-radius: 34px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+    }
+
+    .bio-image {
+      min-height: 520px;
+      background: linear-gradient(135deg, rgba(75,31,120,.32), rgba(199,201,209,.16)), url('johnny-indovina.jpg') center/cover no-repeat;
+    }
+
+    .bio-content {
+      padding: 44px;
+      max-height: 720px;
+      overflow: auto;
+    }
+
+    .bio-note {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 18px;
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      color: var(--purple-dark);
+      font-weight: 900;
+    }
+
+    .quote-band {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(199, 201, 209, 0.28), transparent 30%),
+        linear-gradient(135deg, var(--purple-deep), var(--purple));
+      color: var(--white);
+    }
+
+    .quote-band h2 { color: var(--white); }
+
+    .quote-wrap {
+      display: grid;
+      grid-template-columns: .82fr 1.18fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    blockquote {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .quote-credit {
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.76);
+      font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .links { background: var(--white); }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .link-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 62px;
+      padding: 14px;
+      border-radius: 18px;
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      color: var(--purple-dark);
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .link-grid a:hover { background: var(--white); box-shadow: 0 12px 28px rgba(42, 16, 72, 0.10); }
+
+    .faq { background: var(--silver-light); }
+
+    .faq-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .cta { background: var(--white); }
+
+    .cta-panel {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-radius: 36px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.72fr;
+      gap: 42px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -70px;
+      top: -70px;
+      border-radius: 50%;
+      background: rgba(199, 201, 209, 0.22);
+    }
+
+    .cta-panel h2 { color: var(--white); }
+
+    .cta-panel p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+    }
+
+    .contact-card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .contact-card p {
+      margin: 0 0 12px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .footer {
+      background: var(--purple-deep);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 42px 22px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer a {
+      display: block;
+      margin-top: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer a:hover { color: var(--white); }
+
+    .small-text {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.62);
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      nav { gap: 12px; font-size: 0.82rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .hero-inner,
+      .section-intro,
+      .program-card,
+      .bio-card,
+      .quote-wrap,
+      .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .highlight-grid,
+      .detail-grid,
+      .faq-grid,
+      .link-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 62px 18px 118px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .overview { margin-top: -70px; }
+      .overview-panel, .links-panel, .cta-panel { padding: 24px; border-radius: 26px; }
+      .program-content, .bio-content { padding: 30px; }
+      .program-image, .bio-image { min-height: 280px; }
+      .hero-buttons, .cta-panel .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">Exclusive virtual one-on-one songwriting sessions with Johnny Indovina.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="room-rentals.html">Room Rentals</a>
+        <a href="songwriting-sessions.html">Songwriting</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#discovery">Free Discovery Session</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Virtual songwriting lessons</div>
+          <h1>Songwriting Sessions with Johnny Indovina.</h1>
+          <p>Join an exclusive virtual songwriting program led by seasoned musician Johnny Indovina. These one-on-one, hour-long online sessions are designed to help writers strengthen their craft, refine their songs, and develop a more personal creative voice.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#discovery">Schedule a Free 15-Minute Discovery Session</a>
+            <a class="btn btn-secondary" href="#about-johnny">About Johnny</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="label">Virtual program</div>
+          <h3>Work with Johnny from anywhere.</h3>
+          <p>One-on-one sessions are held virtually, making this a flexible option for songwriters outside of Houma or students who want high-level creative guidance without needing to attend in person.</p>
+          <div class="tag-list">
+            <span>Virtual</span>
+            <span>One-on-one</span>
+            <span>Hour-long sessions</span>
+            <span>Personal feedback</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container">
+        <div class="overview-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Program highlights</div>
+              <h2>Professional songwriting guidance in a personal virtual setting.</h2>
+            </div>
+            <p>Whether you are a novice or an experienced songwriter, this program is designed to inspire creativity, sharpen your process, and help you polish your craft with professional insight.</p>
+          </div>
+
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <div class="label">Expert Guidance</div>
+              <h3>Learn from experience</h3>
+              <p>Benefit from Johnny Indovina’s years of writing, recording, performing, and developing emotionally resonant songs.</p>
+            </article>
+
+            <article class="highlight-card">
+              <div class="label">Interactive Sessions</div>
+              <h3>Hour-long one-on-one lessons</h3>
+              <p>Each virtual session gives you time to ask questions, share work, refine ideas, and receive direct guidance.</p>
+            </article>
+
+            <article class="highlight-card">
+              <div class="label">Creative Development</div>
+              <h3>Elevate your songs</h3>
+              <p>Discover new ways to approach lyrics, melody, mood, structure, storytelling, and emotional honesty in your music.</p>
+            </article>
+
+            <article class="highlight-card">
+              <div class="label">Personalized Feedback</div>
+              <h3>Grow as a writer</h3>
+              <p>Receive constructive critiques and individualized direction to help your songs become stronger and more complete.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="program-section">
+      <div class="container">
+        <div class="program-card">
+          <div class="program-image"></div>
+          <div class="program-content">
+            <div class="label">What the virtual lessons include</div>
+            <h2>Bring a song, a lyric, an idea, or a creative block.</h2>
+            <p>Johnny’s sessions are designed to meet songwriters where they are. You may come with a finished song that needs refinement, an unfinished piece, a melody, a set of lyrics, or simply a desire to understand how to write with more depth and clarity.</p>
+            <div class="tag-list">
+              <span>Lyrics</span>
+              <span>Melody</span>
+              <span>Song structure</span>
+              <span>Creative process</span>
+              <span>Professional critique</span>
+            </div>
+            <ul class="detail-list">
+              <li>Develop stronger lyrics, themes, and emotional clarity</li>
+              <li>Refine melody, phrasing, structure, and song flow</li>
+              <li>Receive thoughtful feedback on your original work</li>
+              <li>Explore Johnny’s creative process and professional songwriting insight</li>
+              <li>Build confidence in your voice as a songwriter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Who it is for</div>
+            <h2>For writers at every stage.</h2>
+          </div>
+          <p>This virtual program is appropriate for students, adult songwriters, artists, singers, instrumentalists, and anyone who wants professional help shaping original music.</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <div class="label">Beginners</div>
+            <h3>Start with guidance</h3>
+            <p>Learn how to turn early ideas into songs and build a process that makes songwriting feel less overwhelming.</p>
+          </article>
+
+          <article class="detail-card">
+            <div class="label">Experienced writers</div>
+            <h3>Refine your craft</h3>
+            <p>Bring existing songs and receive advanced feedback on structure, emotion, flow, lyrics, and musical direction.</p>
+          </article>
+
+          <article class="detail-card">
+            <div class="label">Artists and musicians</div>
+            <h3>Go deeper creatively</h3>
+            <p>Use the session to develop original material, prepare for recording, or reconnect with your creative voice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container quote-wrap">
+        <div>
+          <div class="eyebrow">The heart of the program</div>
+          <h2>Not just songwriting tips. Real creative mentorship.</h2>
+        </div>
+        <div>
+          <blockquote>“The goal is to help you bring more honesty, clarity, and life into the songs you are trying to write.”</blockquote>
+          <div class="quote-credit">Virtual songwriting sessions with Johnny Indovina</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bio-section" id="about-johnny">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">About Johnny Indovina</div>
+            <h2>A songwriter with a long, storied career.</h2>
+          </div>
+          <p>Johnny Indovina is known for decades of thoughtful songwriting, emotionally honest performances, and a devoted international following through his solo work and his band Human Drama.</p>
+        </div>
+
+        <div class="bio-card">
+          <div class="bio-image"></div>
+          <div class="bio-content">
+            <div class="label">Singer / Songwriter / Recording Artist</div>
+            <h3>Johnny Indovina</h3>
+            <p>Singer/songwriter Johnny Indovina has crafted a long, storied career through his thought-provoking work, both solo and with his band Human Drama. Through years of sold-out live performances and critically acclaimed albums, Indovina’s insightful songs about the frailties of the human condition have consistently found a receptive audience and a constantly renewed fan base.</p>
+
+            <p>Since 1985, he has fronted Human Drama. From their formation in New Orleans, through their rise within the mid-1980s Los Angeles club scene, their moving live shows, fueled by Indovina’s poetic imagery, built a huge and devoted following.</p>
+
+            <p>The combination of Indovina’s songwriting and the band’s growing popularity led to a contract with RCA Records in 1988, where they released <em>Hopes Prayers Dreams Heart Soul Mind Love Life Death</em> and <em>Feel</em>. In 1991, they moved to Triple X Records and produced what many consider Indovina’s masterpiece, <em>The World Inside</em>. A string of critical successes followed, including <em>Pinups</em>, <em>The Human Drama EP</em>, <em>Songs of Betrayal</em>, <em>14,384 Days Later</em>, <em>Solemn Sun Setting</em>, <em>In a Perfect World: The Best of Human Drama</em>, <em>Moments in Time</em>, and <em>Cause and Effect</em>.</p>
+
+            <p>Despite flourishing primarily in the U.S. underground, Indovina and Human Drama achieved near-legendary status within music communities in Mexico and Latin America. Human Drama reunited for major shows in Mexico City, including their 30th anniversary performance in 2015, and later returned with new work including <em>Broken Songs for Broken People</em>, <em>Blurred Images</em>, and <em>Ten Small Fractures</em>.</p>
+
+            <p>In 2020, the documentary <em>Seven Days in Mexico</em> was released on Amazon Prime and Apple TV, following Johnny’s journey into rediscovering his musical purpose. In 2022, a book of his lyrics, <em>My Bag of Secrets: The Words of Johnny Indovina</em>, was published and made available on Amazon.</p>
+
+            <div class="bio-note">Johnny brings decades of writing, recording, touring, and creative resilience into each virtual songwriting session.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="links">
+      <div class="container">
+        <div class="links-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Learn more</div>
+              <h2>Explore Johnny’s music and work.</h2>
+            </div>
+            <p>Add the exact URLs to these buttons so visitors can learn more about Johnny Indovina, Human Drama, his music, documentary, book, and YouTube channel.</p>
+          </div>
+
+          <div class="link-grid">
+            <a href="#">Human Drama on Spotify</a>
+            <a href="#">Human Drama on Apple Music</a>
+            <a href="#">Johnny Indovina on Apple Music</a>
+            <a href="#">Johnny Indovina on Spotify</a>
+            <a href="#">Seven Days in Mexico Documentary</a>
+            <a href="#">Human Drama Wikipedia</a>
+            <a href="#">My Bag of Secrets Book</a>
+            <a href="#">Human Drama YouTube Channel</a>
+            <a href="#">Learn More About Johnny</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Questions</div>
+            <h2>Common questions about the virtual program.</h2>
+          </div>
+          <p>These answers help clarify that the songwriting sessions are online, personal, and centered around each writer’s creative goals.</p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>Are the sessions virtual?</h3>
+            <p>Yes. These are virtual one-on-one songwriting sessions, so participants can work with Johnny from anywhere.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>How long is each session?</h3>
+            <p>Each songwriting session is designed as a one-on-one, hour-long virtual lesson.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Do I need to already have songs written?</h3>
+            <p>No. You can bring a finished song, an unfinished piece, a lyric idea, a melody, or a desire to learn how to begin.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Is this for beginners or experienced songwriters?</h3>
+            <p>Both. The program is designed to support novice writers as well as experienced songwriters who want deeper feedback and creative direction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="discovery">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Schedule a free 15-minute discovery session with Johnny.</h2>
+            <p>Use the discovery session to ask questions, talk about your songwriting goals, and see whether virtual songwriting sessions are the right fit.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="tel:9857728066">Call to Schedule</a>
+              <a class="btn btn-secondary" href="contact.html">Ask About Virtual Songwriting</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p>Virtual Songwriting Sessions</p>
+            <p>One-on-one with Johnny Indovina</p>
+            <p>Free 15-minute discovery session available</p>
+            <p><a href="tel:9857728066">985-772-8066</a></p>
+            <a class="btn btn-primary" href="contact.html" style="margin-top: 12px; width: 100%;">Schedule a Free Discovery Session</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, virtual songwriting sessions, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="songwriting-sessions.html">Virtual Songwriting</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

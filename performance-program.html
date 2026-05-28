@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Performance Program | Cournoyer Center for Music Performance</title>
+  <meta name="description" content="The Performance Program at Cournoyer Center for Music Performance combines private lessons, band rehearsals, collaboration, and live performance opportunities in Houma, Louisiana." />
+
+  <meta property="og:title" content="Performance Program | Cournoyer Center for Music Performance" />
+  <meta property="og:description" content="Private lessons plus band rehearsal and live performance opportunities for students ready to grow as musicians." />
+  <meta property="og:image" content="https://cournoyercenter.com/google-thumbnail.jpg" />
+  <meta property="og:url" content="https://cournoyercenter.com/performance-program.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --purple: #4b1f78;
+      --purple-dark: #2a1048;
+      --purple-deep: #160725;
+      --purple-soft: #7c4bb2;
+      --silver: #c7c9d1;
+      --silver-light: #f1f2f6;
+      --white: #ffffff;
+      --ink: #1e1e24;
+      --muted: #686a73;
+      --line: rgba(75, 31, 120, 0.14);
+      --shadow: 0 24px 70px rgba(42, 16, 72, 0.18);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    p, li, nav, button, .btn, .eyebrow, .announcement, .label, .price, .small-text, .program-meta, .detail-list, .caption {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .announcement {
+      background: linear-gradient(90deg, var(--silver-light), var(--white), var(--silver-light));
+      color: var(--purple-dark);
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+      padding: 9px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(42, 16, 72, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .nav-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 270px;
+    }
+
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand span span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--silver-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: var(--white);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.94rem;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      cursor: pointer;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(42, 16, 72, 0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--silver-light), var(--silver));
+      color: var(--purple-dark);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-purple { background: var(--purple); color: var(--white); }
+    .btn-outline {
+      border-color: rgba(75, 31, 120, 0.22);
+      color: var(--purple-dark);
+      background: transparent;
+    }
+
+    .page-hero {
+      position: relative;
+      min-height: 640px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(199, 201, 209, 0.36), transparent 30%),
+        linear-gradient(90deg, rgba(22, 7, 37, 0.97) 0%, rgba(42, 16, 72, 0.88) 48%, rgba(75, 31, 120, 0.54) 100%),
+        url('performance-program-hero.jpg') center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 150px;
+      background: linear-gradient(0deg, var(--white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      padding: 92px 22px 132px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--silver-light);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 6.6vw, 6.2rem);
+      max-width: 980px;
+    }
+
+    h2 {
+      font-size: clamp(2.15rem, 4.1vw, 4.2rem);
+      color: var(--purple-dark);
+    }
+
+    h3 {
+      font-size: clamp(1.32rem, 2vw, 2rem);
+      color: var(--purple-dark);
+    }
+
+    .page-hero p {
+      font-size: clamp(1.06rem, 1.55vw, 1.28rem);
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    section { padding: 92px 22px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr;
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-intro p {
+      font-size: 1.08rem;
+      margin: 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .overview {
+      margin-top: -86px;
+      position: relative;
+      z-index: 5;
+      padding-top: 0;
+    }
+
+    .overview-panel,
+    .gallery-panel {
+      background: var(--white);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+      padding: 32px;
+      border: 1px solid var(--line);
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .quick-card,
+    .detail-card,
+    .step,
+    .faq-card,
+    .package-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 44px rgba(42, 16, 72, 0.07);
+      padding: 30px;
+    }
+
+    .quick-card {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .label {
+      color: var(--purple-soft);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .quick-card p,
+    .feature-card p,
+    .detail-card p,
+    .step p,
+    .faq-card p,
+    .package-card p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .feature {
+      background: linear-gradient(180deg, var(--white), var(--silver-light));
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: 0 18px 54px rgba(42, 16, 72, 0.10);
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      min-height: 440px;
+    }
+
+    .feature-image {
+      background: linear-gradient(135deg, rgba(75,31,120,.38), rgba(199,201,209,.16)), var(--image) center/cover no-repeat;
+      min-height: 360px;
+    }
+
+    .feature-content {
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .program-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 22px;
+      font-size: 0.82rem;
+      font-weight: 900;
+      color: var(--purple-dark);
+    }
+
+    .program-meta span {
+      background: var(--silver-light);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .detail-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .detail-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .detail-list li::before {
+      content: '♪';
+      color: var(--purple-soft);
+      font-weight: 900;
+    }
+
+    .details { background: var(--white); }
+
+    .detail-grid,
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .steps { background: var(--silver-light); }
+
+    .step-grid { counter-reset: steps; }
+    .step { counter-increment: steps; }
+
+    .step::before {
+      content: counter(steps);
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--purple);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .gallery {
+      background: var(--white);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      grid-template-rows: 230px 230px;
+      gap: 14px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      min-height: 180px;
+      background: linear-gradient(135deg, rgba(75,31,120,.34), rgba(199,201,209,.16)), var(--image) center/cover no-repeat;
+    }
+
+    .gallery-item.tall { grid-row: span 2; }
+
+    .caption {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      right: 18px;
+      background: rgba(22, 7, 37, 0.72);
+      color: var(--white);
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    .package {
+      background: var(--silver-light);
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .package-card.featured {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .package-card.featured h3,
+    .package-card.featured p {
+      color: var(--white);
+    }
+
+    .price {
+      display: inline-flex;
+      margin-top: 18px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--silver-light);
+      color: var(--purple-dark);
+      font-weight: 900;
+      font-size: 0.86rem;
+    }
+
+    .package-card.featured .price {
+      background: rgba(255, 255, 255, 0.14);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .testimonial-band {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(199, 201, 209, 0.28), transparent 30%),
+        linear-gradient(135deg, var(--purple-deep), var(--purple));
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .testimonial-band h2 { color: var(--white); }
+
+    .quote-wrap {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    blockquote {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .quote-credit {
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.76);
+      font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .faq { background: var(--white); }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .cta { background: var(--white); }
+
+    .cta-panel {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+      color: var(--white);
+      border-radius: 36px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.72fr;
+      gap: 42px;
+      align-items: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -70px;
+      top: -70px;
+      border-radius: 50%;
+      background: rgba(199, 201, 209, 0.22);
+    }
+
+    .cta-panel h2 { color: var(--white); }
+
+    .cta-panel p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contact-card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .contact-card p {
+      margin: 0 0 12px;
+      color: var(--white);
+      font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer {
+      background: var(--purple-deep);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 42px 22px;
+    }
+
+    .footer-grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .footer a {
+      display: block;
+      margin-top: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer a:hover { color: var(--white); }
+
+    .small-text {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.62);
+      margin-top: 22px;
+    }
+
+    @media (max-width: 1080px) {
+      nav { gap: 12px; font-size: 0.82rem; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        position: fixed;
+        inset: 112px 18px auto 18px;
+        background: var(--purple-dark);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 22px;
+        padding: 18px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open { display: flex; }
+      nav a { padding: 12px 10px; }
+      .nav-actions .btn { display: none; }
+
+      .section-intro,
+      .quote-wrap,
+      .cta-panel,
+      .feature-card {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid,
+      .detail-grid,
+      .step-grid,
+      .package-grid,
+      .faq-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .gallery-item.tall { grid-row: auto; }
+      .gallery-item { min-height: 260px; }
+    }
+
+    @media (max-width: 640px) {
+      .announcement { font-size: 0.78rem; }
+      .brand { min-width: auto; }
+      .brand-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .brand strong { font-size: 0.78rem; }
+      .brand span span { font-size: 0.58rem; }
+      .nav-wrap { padding: 12px 16px; }
+      .hero-inner { padding: 62px 18px 118px; }
+      h1 { font-size: 3rem; }
+      section { padding: 68px 18px; }
+      .overview { margin-top: -70px; }
+      .overview-panel, .gallery-panel, .cta-panel { padding: 24px; border-radius: 26px; }
+      .feature-content { padding: 30px; }
+      .feature-image { min-height: 250px; }
+      .hero-buttons, .cta-panel .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">The Performance Program helps students learn their instrument and experience the confidence of playing with others.</div>
+
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Cournoyer Center home">
+        <img class="brand-logo" src="logo.png" alt="Cournoyer Center for Music Performance logo" />
+        <span class="brand-text">
+          <strong>Cournoyer Center</strong>
+          <span>For Music Performance</span>
+        </span>
+      </a>
+
+      <nav id="siteNav">
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="room-rentals.html">Room Rentals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Schedule a Tour</a>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Private lessons plus band rehearsal</div>
+        <h1>Where students become confident performers.</h1>
+        <p>The Performance Program helps students take what they learn in private lessons and apply it in a real band setting, building skill, teamwork, stage presence, and confidence.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="register-now.html">Register Now</a>
+          <a class="btn btn-secondary" href="#how-it-works">How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container">
+        <div class="overview-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Why performance</div>
+              <h2>Private lessons are the start. Performance is the difference.</h2>
+            </div>
+            <p>Students do not just learn notes and songs. They learn how to listen, collaborate, rehearse, recover from mistakes, and share music with an audience.</p>
+          </div>
+
+          <div class="quick-grid">
+            <article class="quick-card">
+              <div class="label">Skill</div>
+              <h3>Private lesson growth</h3>
+              <p>Students continue building instrument-specific technique, rhythm, musicianship, and confidence with their instructor.</p>
+            </article>
+
+            <article class="quick-card">
+              <div class="label">Collaboration</div>
+              <h3>Weekly band rehearsal</h3>
+              <p>Students learn how to play with others, follow arrangements, listen across the band, and work as part of a group.</p>
+            </article>
+
+            <article class="quick-card">
+              <div class="label">Confidence</div>
+              <h3>Live performance goals</h3>
+              <p>Students work toward performance opportunities that give practice purpose and help them grow on stage.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container">
+        <div class="feature-card">
+          <div class="feature-image" style="--image: url('performance-band-rehearsal.jpg');"></div>
+          <div class="feature-content">
+            <div class="label">The signature program</div>
+            <h2>A complete music experience for growing students.</h2>
+            <p>The Performance Program is designed for students who are ready to move beyond individual practice and experience what it means to play with a band. It combines private instruction with group rehearsal so students can build both technical skill and real-world musicianship.</p>
+            <div class="program-meta">
+              <span>Private instruction</span>
+              <span>Band rehearsal</span>
+              <span>Live shows</span>
+              <span>Teamwork</span>
+            </div>
+            <ul class="detail-list">
+              <li>Builds confidence through real performance goals</li>
+              <li>Helps students learn timing, listening, and collaboration</li>
+              <li>Gives students a reason to practice and stay motivated</li>
+              <li>Creates a music community around growth and encouragement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Who it is for</div>
+            <h2>For students ready to grow through music and community.</h2>
+          </div>
+          <p>This program is ideal for students who want more than a weekly lesson and are ready to learn how music works in a group setting.</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <div class="label">Motivated students</div>
+            <h3>They want a goal</h3>
+            <p>Performance gives students something exciting to work toward beyond weekly practice.</p>
+          </article>
+
+          <article class="detail-card">
+            <div class="label">Developing musicians</div>
+            <h3>They are ready to listen</h3>
+            <p>Band rehearsal teaches timing, awareness, flexibility, and how to fit into a full sound.</p>
+          </article>
+
+          <article class="detail-card">
+            <div class="label">Confidence builders</div>
+            <h3>They need experience</h3>
+            <p>Stage opportunities help students become more comfortable performing in front of others.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="how-it-works">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">How it works</div>
+            <h2>A clear path from lesson room to stage.</h2>
+          </div>
+          <p>The program keeps the structure simple so students know what they are working on and why it matters.</p>
+        </div>
+
+        <div class="step-grid">
+          <article class="step">
+            <h3>Build skills in lessons</h3>
+            <p>Students continue learning their instrument with personalized instruction and support.</p>
+          </article>
+
+          <article class="step">
+            <h3>Rehearse with a band</h3>
+            <p>Students practice songs together, learn arrangements, and develop teamwork.</p>
+          </article>
+
+          <article class="step">
+            <h3>Perform with confidence</h3>
+            <p>Students work toward live performance opportunities that build pride and stage presence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery-panel">
+          <div class="section-intro">
+            <div>
+              <div class="eyebrow" style="color: var(--purple-soft);">Performance in action</div>
+              <h2>Show the energy of rehearsal and live music.</h2>
+            </div>
+            <p>Use this gallery for your strongest performance photos: students on stage, band rehearsals, instructor coaching, and audience moments.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item tall" style="--image: url('performance-gallery-1.jpg');"><div class="caption">Students performing live</div></div>
+            <div class="gallery-item" style="--image: url('performance-gallery-2.jpg');"><div class="caption">Band rehearsal</div></div>
+            <div class="gallery-item" style="--image: url('performance-gallery-3.jpg');"><div class="caption">Learning together</div></div>
+            <div class="gallery-item" style="--image: url('performance-gallery-4.jpg');"><div class="caption">Stage confidence</div></div>
+            <div class="gallery-item" style="--image: url('performance-gallery-5.jpg');"><div class="caption">Music community</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="package">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Program structure</div>
+            <h2>What students receive.</h2>
+          </div>
+          <p>Use this section to clarify the program components, tuition, schedule, and expectations once those details are finalized.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card">
+            <div class="label">Included</div>
+            <h3>Private instruction</h3>
+            <p>Students continue building skills through one-on-one lesson time with an instructor.</p>
+            <span class="price">Personalized lesson support</span>
+          </article>
+
+          <article class="package-card featured">
+            <div class="label" style="color: var(--silver-light);">Included</div>
+            <h3>Weekly band rehearsal</h3>
+            <p>Students rehearse with others, learn songs together, and prepare for performance opportunities.</p>
+            <span class="price">Collaboration and stage preparation</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-band">
+      <div class="container quote-wrap">
+        <div>
+          <div class="eyebrow">The transformation</div>
+          <h2>Performance helps students believe in themselves.</h2>
+        </div>
+        <div>
+          <blockquote>“She has made friends with other students and is having the time of her life.”</blockquote>
+          <div class="quote-credit">A Cournoyer Center parent</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow" style="color: var(--purple-soft);">Questions</div>
+            <h2>Common questions about the Performance Program.</h2>
+          </div>
+          <p>These answers help families understand whether the program is the right next step for their student.</p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>Does my child need to be advanced?</h3>
+            <p>Not necessarily. The best fit depends on readiness, instrument skills, confidence level, and available placement options.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Is this different from private lessons?</h3>
+            <p>Yes. Private lessons focus on the individual student, while the Performance Program adds band rehearsal and performance preparation.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>What skills do students build?</h3>
+            <p>Students build timing, listening, teamwork, confidence, performance habits, and stronger musical independence.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>How do we know if my child is ready?</h3>
+            <p>The center can help evaluate your student’s age, experience, instrument, and goals to determine the right path.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Ready to explore the Performance Program?</h2>
+            <p>Reach out with your student’s age, instrument, and experience level. The team can help you decide whether performance is the right next step.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="tel:9857728066">Call or Text</a>
+              <a class="btn btn-secondary" href="contact.html">Ask About Placement</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <p>120 Prevost Drive</p>
+            <p>Houma, Louisiana</p>
+            <p><a href="tel:9857728066">985-772-8066</a></p>
+            <p><a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a></p>
+            <a class="btn btn-primary" href="register-now.html" style="margin-top: 12px; width: 100%;">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>Cournoyer Center for Music Performance</strong>
+        <div>Music lessons, performance programs, workshops, camps, and room rentals in Houma, Louisiana.</div>
+        <div class="small-text">© <span id="year"></span> Cournoyer Center for Music Performance. All rights reserved.</div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="index.html">Home</a>
+        <a href="private-instruction.html">Private Instruction</a>
+        <a href="group-instruction.html">Group Instruction</a>
+        <a href="performance-program.html">Performance Program</a>
+        <a href="faculty.html">Faculty</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="tel:9857728066">985-772-8066</a>
+        <a href="mailto:info@cournoyercenter.com">info@cournoyercenter.com</a>
+        <a href="contact.html">Schedule a Tour</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('siteNav');
+      nav.classList.toggle('open');
+    }
+
+    document.querySelectorAll('nav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('siteNav').classList.remove('open');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
